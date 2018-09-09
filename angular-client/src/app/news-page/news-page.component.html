@@ -1,0 +1,13 @@
+<h1>News page</h1>
+
+<p>List of all news from the server:</p>
+<ol>
+  <li *ngFor="let news of newsList">
+    <h4>{{news.title}}</h4>
+    <p>Author: {{news.author}}</p>
+    <a [routerLink]="['/news', news.id]">Read it</a>
+  </li>
+  <li>
+    <a routerLink="/news/9696969">Link to non-existing news resource</a>
+  </li>
+</ol>

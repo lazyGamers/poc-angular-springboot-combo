@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  logging:
+    level:
+      .: debug
+      org.springframework.web: DEBUG
+custom-config:
+  my-message: "Hello me!"
